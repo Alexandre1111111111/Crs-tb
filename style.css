@@ -1,7 +1,7 @@
 #hd {
     position: fixed;
     min-width: 100%;
-    border: 2px solid #000;
+    border: 2px solid rgb(31, 230, 91);
     height: 150px;
     top: 0px;
     background-color: rgb(236, 239, 243);
