@@ -2,9 +2,18 @@
     position: fixed;
     min-width: 100%;
     border: 2px solid rgb(31, 230, 91);
-    height: 150px;
+    height: 120px;
     top: 0px;
     background-color: rgb(236, 239, 243);
+    z-index: 5;
+    box-shadow: 2px 2px 2px #406f26;
+}
+#nome {
+    color: #39e65e;
+    text-shadow: 2px 2px 2px#406f26;
+    position: absolute;
+    left: 170px;
+    top: 20px;
 }
 body {
     margin: 0;
@@ -24,7 +33,7 @@ html {
     position: absolute;
     left: 30px;
     margin: 0 auto;
-    height: 150px;
+    height: 120px;
 }
 *{outline: none;margin:0;padding:0;}
 html, body {height: 100%;}
@@ -81,7 +90,63 @@ html, body {height: 100%;}
 .btns {
     display: flex;
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 30px;
     align-items: center;
+}
+.container {
+    display: block;
+    margin: 0 auto;
+    height: 700px;
+    width: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 170px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    box-shadow: 10px 10px 10px #000;
+    color: #fff;
+}
+#cons {
+    text-align: center;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    text-shadow: 1px 1px 1px #000;
+}
+#ft {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background: url(back.jpg);
+    position: relative;
+    bottom: -280px;
+    border-top: 5px solid #2ead49;
+    color: #39e65e;
+    text-align: center;
+    text-shadow: 5px 5px 5px #406f26;
+}
+#flh {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    position: relative;
+    top: 50px;
+}
+#tft {
+    position: relative;
+    top: 30px;
+}
+#sft {
+    position: relative;
+    top: 80px;
+}
+#mpd {
+    display: block;
+    height: 300px;
+    position: absolute;
+    right: 30px;
+    top: 190px;
+    border: 3px solid #39e65e;
 }
