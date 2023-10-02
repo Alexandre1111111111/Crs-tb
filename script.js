@@ -5,11 +5,13 @@ mpd.addEventListener("click", () => {
         mpd.style.height = "700px";
         mpd.style.position = "unset";
         cons.style.display = "none";
+        mpd.title="Clique para Retrair"
     }
     else {
         mpd.style.height = "300px";
         mpd.style.position = "absolute";
         cons.style.display = "block";
+        mpd.title="Clique para Expandir"
     }
 })
 mpd.addEventListener("mouseover", () => {
