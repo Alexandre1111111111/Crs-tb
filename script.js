@@ -1,16 +1,18 @@
 const mpd = document.querySelector("#mpd");
 const cons = document.querySelector("#cons");
 mpd.addEventListener("click", () => {
-    if(mpd.style.position == "absolute") {
+    if(mpd.style.height == "300px") {
         mpd.style.height = "700px";
-        mpd.style.position = "unset";
+        mpd.style.top = "0px";
+        mpd.style.right = "0px";
         cons.style.display = "none";
         mpd.title="Clique para Retrair"
     }
     else {
         mpd.style.height = "300px";
-        mpd.style.position = "absolute";
         cons.style.display = "block";
+        mpd.style.top = "190px";
+        mpd.style.right = "30px";
         mpd.title="Clique para Expandir"
     }
 })
