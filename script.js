@@ -1,5 +1,6 @@
 const mpd = document.querySelector("#mpd");
 const cons = document.querySelector("#cons");
+
 mpd.addEventListener("click", () => {
     if(mpd.style.height == "300px") {
         mpd.style.height = "700px";
