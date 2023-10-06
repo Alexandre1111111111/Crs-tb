@@ -7,6 +7,10 @@
     background: url(hdbg.jpg);
     z-index: 10;
     box-shadow: inset 0px 0px 5px 5px rgba(0, 70, 0, 0.5);
+    transition-duration: 0.3s;
+}
+#hd:hover {
+    border: 2px solid rgb(25, 167, 68);
 }
 #nome {
     color: #39e65e;
@@ -19,6 +23,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 html {
     text-align: center;
@@ -144,6 +150,7 @@ html, body {height: 100%;}
 }
 #ft:hover {
     border-top: 5px solid #1e7c33;
+    color: #45ce63;
 }
 #flh {
     display: block;
@@ -185,7 +192,11 @@ html, body {height: 100%;}
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    left: -7px;
+    transition-duration: 0.3s;
+    left: -8px;
+}
+.ctmain:hover {
+    border: 4px solid #24727c;
 }
 .cont1 {
     display: block;
@@ -198,6 +209,38 @@ html, body {height: 100%;}
     color: #fff;
     transition-duration: 0.5s;
 }
+.cont1 h1 {
+    color: #52b5c2;
+    text-shadow: 3px 3px 3px #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    transition-duration: 0.3s;
+}
+.cont1 img {
+    height: 250px;
+    border: 3px solid #1e7c33;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    z-index: 4;
+}
+.cont1 p {
+    color: #9ae1eb;
+    width: 465px;
+    margin: 0 auto;
+    margin-top: 15px;
+    line-height: 1.5;
+    transition-duration: 0.3s;
+}
+.cont1:hover img {
+    border: 3px solid #2b9642;
+}
+.cont1:hover p {
+    color: #beecf1;
+}
+.cont1:hover h1 {
+    color: #72bdc7;
+}
 .cont2 {
     display: block;
     margin: 0 auto;
@@ -209,6 +252,33 @@ html, body {height: 100%;}
     color: #fff;
     transition-duration: 0.5s;
 }
+.cont2 img {
+    display: block;
+    height: 120px;
+    border: 1px solid #1e7c33;
+    border-radius: 150px;
+    background-color: #18525a;
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 60px;
+    transition-duration: 0.3s;
+    z-index: 4;
+}
+.cont2 p {
+    color: #b2df38;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 40px;
+    line-height: 1.5;
+    transition-duration: 0.3s;
+}
+.cont2:hover img {
+    border: 1px solid #3ba752;
+    background-color: #1b5c63;
+}
+.cont2:hover p {
+    color: #c5e275;
+}
 .cont3 {
     display: block;
     margin: 0 auto;
@@ -219,6 +289,38 @@ html, body {height: 100%;}
     border: 3px solid #000;
     color: #fff;
     transition-duration: 0.5s;
+}
+.cont3 h1 {
+    color: #c4eb5a;
+    text-shadow: 3px 3px 3px #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    transition-duration: 0.3s;
+}
+.cont3 img {
+    height: 250px;
+    border: 3px solid #1e7c33;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    z-index: 4;
+}
+.cont3 p {
+    color: #dcf1a0;
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 15px;
+    line-height: 1.5;
+    transition-duration: 0.3s;
+}
+.cont3:hover img {
+    border: 3px solid #2b9642;
+}
+.cont3:hover p {
+    color: #e4f3bc;
+}
+.cont3:hover h1 {
+    color: #cce685;
 }
 .cont1:hover {
     box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
@@ -260,7 +362,31 @@ html, body {height: 100%;}
     position: absolute;
     right: 500px;
 }
+.ongs {
+    display: none;
+    width: 100%;
+    background-color: #1e7c33;
+    height: 100%;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 15;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    overflow-y: scroll;
+    border: 3px solid #1b5c63;
+}
+.ongs::-webkit-scrollbar {
+    background: #1b5c63;
+}
 @keyframes apar {
     from{opacity: 0; left: 40px;}
     to{opacity: 1; left: 100px;}
+}
+@keyframes ong {
+    from{top: 1100px;}
+    to{top: 300px;}
+}
+@keyframes ongback {
+    from{top: 300px;}
+    to{top: 1100px;}
 }
