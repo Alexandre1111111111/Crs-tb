@@ -366,7 +366,7 @@ html, body {height: 100%;}
     display: none;
     width: 100%;
     background-color: #1e7c33;
-    height: 100%;
+    height: 70%;
     position: fixed;
     margin: 0 auto;
     z-index: 15;
@@ -374,9 +374,21 @@ html, body {height: 100%;}
     animation-fill-mode: forwards;
     overflow-y: scroll;
     border: 3px solid #1b5c63;
+    box-shadow: inset 3px 3px 3px #18525a;
+    border-radius: 10px;
 }
 .ongs::-webkit-scrollbar {
-    background: #1b5c63;
+    background: #1b633f;
+    border: 2px solid #1b5c63;
+}
+.ongs::-webkit-scrollbar-thumb {
+    background: #06c6db;
+    border-radius: 20px;
+    border: 1px solid #1b633f;
+}
+#ong1 {
+    height: 1200px;
+    width: 100%;
 }
 @keyframes apar {
     from{opacity: 0; left: 40px;}
