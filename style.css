@@ -12,9 +12,41 @@
 #hd:hover {
     border: 2px solid rgb(25, 167, 68);
 }
+#hd:hover #situa {
+    border: 2px solid rgb(25, 167, 68);
+    color: #abebb9;
+}
+#hd:hover .vv h1 {
+    color: #66df7e;
+}
+#hd:hover .btn, #hd:hover #btn_ong {
+    border: 1px solid #63bb30;
+}
+#situa {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 25px;
+    color: #56e79e;
+    text-shadow: 2px 2px 2px #000;
+    background-color: #18525a;
+    width: 600px;
+    border-radius: 30px;
+    border: 2px solid #129fae;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    transition-duration: 0.3s;
+}
 #nome {
     color: #39e65e;
     text-shadow: 2px 2px 2px#406f26;
+    transition-duration: 0.3s;
 }
 body {
     margin: 0;
@@ -104,7 +136,7 @@ html, body {height: 100%;}
     align-items: center;
     background-color: #18525a;
     height: 100%;
-    padding-left: 240px;
+    padding-left: 220px;
     padding-right: 20px;
 }
 .container {
@@ -150,6 +182,9 @@ html, body {height: 100%;}
     text-shadow: 5px 5px 5px #406f26;
     box-shadow: inset 0px 0px 5px 5px rgba(0, 100, 0, 1);
     transition-duration: 0.3s;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 #ft:hover {
     border-top: 5px solid #1e7c33;
@@ -194,9 +229,7 @@ html, body {height: 100%;}
     box-shadow: inset 0px 0px 5px 5px rgba(0, 70, 0, 1);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     transition-duration: 0.3s;
-    left: -8px;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -350,6 +383,7 @@ html, body {height: 100%;}
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    z-index: 12;
 }
 .borda {
     height: 120px;
@@ -360,6 +394,7 @@ html, body {height: 100%;}
     transform: rotate(180deg);
     position: fixed;
     left: 470px;
+    z-index: 12;
 }
 .borda2 {
     height: 120px;
@@ -369,7 +404,7 @@ html, body {height: 100%;}
     -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
     transform: rotate(0deg);
     position: absolute;
-    right: 499px;
+    right: 479px;
 }
 .ongs {
     display: none;
@@ -381,7 +416,7 @@ html, body {height: 100%;}
     z-index: 15;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
-    overflow-y: scroll;
+    overflow-y: auto;
     border: 5px solid #1b5c63;
     box-shadow: inset 3px 3px 3px #18525a;
     border-radius: 10px;
@@ -537,4 +572,100 @@ html, body {height: 100%;}
 @keyframes ongback {
     from{top: 300px;}
     to{top: 1100px;}
+}
+@media screen and (max-width: 1700px) {
+    #situa {
+        display: none;
+    }
+    .cont1, .cont2, .cont3 {
+        height: 600px;
+        width: 400px;
+    }
+    .cont1 p, .cont2 p, .cont3 p {
+        width: 350px;
+        font-size: 20px;
+    }
+    .cont1 img, .cont3 img {
+        height: 200px;
+    }
+    .cont2 img {
+        height: 80px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .ctmain {
+        display: grid;
+        height: 2000px;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .container {
+        width: 700px;
+        height: 500px;
+    }
+    #mpd {
+        height: 200px;
+        top: 140px;
+        pointer-events: none;
+    }
+    #cons {
+        font-size: 30px;
+        left: 50px;
+    }
+    @keyframes apar {
+        from{opacity: 0; left: 20px;}
+        to{opacity: 1; left: 50px;}
+    }
+}
+@media screen and (max-width: 830px) {
+    .borda, .borda2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 730px) {
+    .container {
+        max-width: 500px;
+        height: 700px;
+    }
+    #mpd {
+        top: 400px;
+        right: 100px;
+    }
+    #cons {
+        left: 100px;
+        top: 50px;
+    }
+    @keyframes apar {
+        from{opacity: 0; left: 20px;}
+        to{opacity: 1; left: 100px;}
+    }
+    .vv h1{
+        font-size: 30px;
+    }
+    #tvimg {
+        height: 50px;
+    }
+    .vv {
+        height: 120px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .container {
+        max-width: 350px;
+        height: 500px;
+    }
+    #mpd {
+        height: 150px;
+        top: 280px;
+        right: 65px;
+    }
+    #cons {
+        left: 30px;
+        top: 90px;
+        font-size: 20px;
+    }
+    @keyframes apar {
+        from{opacity: 0; left: 0px;}
+        to{opacity: 1; left: 30px;}
+    }
 }
