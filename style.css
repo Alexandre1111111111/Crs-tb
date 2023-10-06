@@ -119,6 +119,9 @@ html, body {height: 100%;}
     border: 3px solid #000;
     color: #fff;
     transition-duration: 0.5s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 .container:hover {
     box-shadow: inset 0px 0px 5px 5px rgba(0, 0, 0, 1);
@@ -194,6 +197,9 @@ html, body {height: 100%;}
     position: relative;
     transition-duration: 0.3s;
     left: -8px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 .ctmain:hover {
     border: 4px solid #24727c;
@@ -341,31 +347,34 @@ html, body {height: 100%;}
     padding-left: 20px;
     padding-right: 60px;
     box-shadow: inset 100px 0px 0px 0px rgba(0, 90, 0, 0.3);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 .borda {
     height: 120px;
     width: 100px;
     background-color: #18525a;
-    clip-path: none;
+    clip-path: polygon(90% 0%, 0% 100%, 100% 100%);
     -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
     transform: rotate(180deg);
-    position: absolute;
-    left: 465px;
+    position: fixed;
+    left: 470px;
 }
 .borda2 {
     height: 120px;
     width: 100px;
     background-color: #18525a;
-    clip-path: none;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
     -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
     transform: rotate(0deg);
     position: absolute;
-    right: 500px;
+    right: 499px;
 }
 .ongs {
     display: none;
     width: 100%;
-    background-color: #1e7c33;
+    background: url(backong.jpg);
     height: 70%;
     position: fixed;
     margin: 0 auto;
@@ -373,9 +382,12 @@ html, body {height: 100%;}
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
     overflow-y: scroll;
-    border: 3px solid #1b5c63;
+    border: 5px solid #1b5c63;
     box-shadow: inset 3px 3px 3px #18525a;
     border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .ongs::-webkit-scrollbar {
     background: #1b633f;
@@ -387,8 +399,120 @@ html, body {height: 100%;}
     border: 1px solid #1b633f;
 }
 #ong1 {
-    height: 1200px;
+    display: flex;
+    align-items: center;
+    height: 400px;
     width: 100%;
+    border-bottom: 3px solid #18525a;
+    background-color: rgba(10, 100, 10, 0.1);
+    box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
+}
+#titong {
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid #18525a;
+    background-color: rgba(10, 100, 10, 0.15);
+}
+#titong h1 {
+    color: #25b0c0;
+    text-shadow: 3px 3px 3px #000;
+    box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
+}
+#ong1 a {
+    font-size: 60px;
+    text-align: left;
+    color: #6fc9d3;
+    text-shadow: 3px 3px 3px #000;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#ong2 a {
+    font-size: 60px;
+    text-align: left;
+    color: #6fc9d3;
+    text-shadow: 3px 3px 3px #000;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#ong3 a {
+    font-size: 60px;
+    text-align: left;
+    color: #6fc9d3;
+    text-shadow: 3px 3px 3px #000;
+    margin-left: 20px;
+    text-decoration: none;
+}
+#ong1 p {
+    color: #6fc9d3;
+    text-shadow: 1px 1px 1px #000;
+}
+#textong1 {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    border-left: 3px solid #18525a;
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 400px;
+    background-color: rgba(37, 180, 37, 0.1);
+    font-size: 30px;
+    align-items: center;
+}
+#ong2 p {
+    color: #6fc9d3;
+    text-shadow: 1px 1px 1px #000;
+}
+#textong2 {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    border-left: 3px solid #18525a;
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 400px;
+    background-color: rgba(37, 180, 37, 0.1);
+    font-size: 30px;
+    align-items: center;
+}
+#ong3 p {
+    color: #6fc9d3;
+    text-shadow: 1px 1px 1px #000;
+}
+#textong3 {
+    display: flex;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    border-left: 3px solid #18525a;
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 400px;
+    background-color: rgba(37, 180, 37, 0.1);
+    font-size: 30px;
+    align-items: center;
+}
+#ong2 {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    border-bottom: 3px solid #18525a;
+    background-color: rgba(10, 100, 10, 0.1);
+    box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
+}
+#ong3 {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    border-bottom: 3px solid #18525a;
+    background-color: rgba(10, 100, 10, 0.1);
+    box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
 }
 @keyframes apar {
     from{opacity: 0; left: 40px;}
