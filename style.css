@@ -425,6 +425,10 @@ html, body {height: 100%;}
     text-shadow: 3px 3px 3px #000;
     margin-left: 20px;
     text-decoration: none;
+    transition-duration: 0.3s;
+}
+#ong1 a:hover {
+    color: #89d7e0;
 }
 #ong2 a {
     font-size: 60px;
@@ -433,6 +437,10 @@ html, body {height: 100%;}
     text-shadow: 3px 3px 3px #000;
     margin-left: 20px;
     text-decoration: none;
+    transition-duration: 0.3s;
+}
+#ong2 a:hover {
+    color: #89d7e0;
 }
 #ong3 a {
     font-size: 60px;
@@ -441,6 +449,10 @@ html, body {height: 100%;}
     text-shadow: 3px 3px 3px #000;
     margin-left: 20px;
     text-decoration: none;
+    transition-duration: 0.3s;
+}
+#ong3 a:hover {
+    color: #89d7e0;
 }
 #ong1 p {
     color: #6fc9d3;
