@@ -575,6 +575,16 @@ html, body {height: 100%;}
 }
 @media screen and (max-width: 1700px) {
     #situa {
+        font-size: 20px;
+        width: 500px;
+        top: 30px;
+    }
+    #ong1 a, #ong2 a, #ong3 a {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1650px) {
+    #situa {
         display: none;
     }
     .cont1, .cont2, .cont3 {
@@ -592,10 +602,28 @@ html, body {height: 100%;}
         height: 80px;
     }
 }
+@media screen and (max-width: 1400px) {
+    #ong1 a, #ong2 a, #ong3 a {
+        width: 600px;
+    }
+}
 @media screen and (max-width: 1250px) {
     .ctmain {
         display: grid;
         height: 2000px;
+    }
+    #ong1 a, #ong2 a, #ong3 a {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1065px) {
+    #textong1, #textong2, #textong3 {
+        display: none;
+    }
+    #ong1 a, #ong2 a, #ong3 a {
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
     }
 }
 @media screen and (max-width: 1030px) {
@@ -622,7 +650,7 @@ html, body {height: 100%;}
         display: none;
     }
 }
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 745px) {
     .container {
         max-width: 500px;
         height: 700px;
@@ -649,6 +677,14 @@ html, body {height: 100%;}
         height: 120px;
     }
 }
+@media screen and (max-width: 570px) {
+    #nome, #tvimg {
+        display: none;
+    }
+    .vv {
+        box-shadow: none;
+    }
+}
 @media screen and (max-width: 520px) {
     .container {
         max-width: 350px;
@@ -667,5 +703,31 @@ html, body {height: 100%;}
     @keyframes apar {
         from{opacity: 0; left: 0px;}
         to{opacity: 1; left: 30px;}
+    }
+}
+@media screen and (max-width: 400px) {
+    .cont1, .cont2, .cont3 {
+        height: 800px;
+        width: 300px;
+    }
+    .cont1 p, .cont2 p, .cont3 p {
+        width: 200px;
+        font-size: 18px;
+    }
+    .cont1 img, .cont3 img {
+        height: 150px;
+    }
+    .cont2 img {
+        height: 80px;
+    }
+    .cont1 h1, .cont3 h1 {
+        font-size: 25px;
+    }
+    .ctmain {
+        height: 2500px;
+        width: 98%;
+    }
+    .vv {
+        display: none;
     }
 }
