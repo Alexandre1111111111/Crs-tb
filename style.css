@@ -35,7 +35,7 @@
     color: #56e79e;
     text-shadow: 2px 2px 2px #000;
     background-color: #18525a;
-    width: 600px;
+    width: 620px;
     border-radius: 30px;
     border: 2px solid #129fae;
     user-select: none;
@@ -187,7 +187,6 @@ html, body {height: 100%;}
     transition-duration: 0.3s;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 #ft:hover {
     border-top: 5px solid #1e7c33;
@@ -217,7 +216,6 @@ html, body {height: 100%;}
     border: 3px solid #39e65e;
     z-index: 4;
     transition-duration: 0.3s;
-    cursor: pointer;
     border-radius: 20px;
 }
 .ctmain {
@@ -425,7 +423,6 @@ html, body {height: 100%;}
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 .ongs::-webkit-scrollbar {
     background: #1b633f;
@@ -435,6 +432,9 @@ html, body {height: 100%;}
     background: #06c6db;
     border-radius: 20px;
     border: 1px solid #1b633f;
+}
+.ongs::-webkit-scrollbar-thumb:hover {
+    background: #78b7bd;
 }
 .ongs::-webkit-scrollbar-thumb:active {
     background: #17abbb;
@@ -447,12 +447,26 @@ html, body {height: 100%;}
     border-bottom: 3px solid #18525a;
     background-color: rgba(10, 100, 10, 0.1);
     box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
+    transition-duration: 0.3s;
+}
+#ong1:hover {
+    background-color: rgba(10, 100, 10, 0.3);
+}
+#ong2:hover {
+    background-color: rgba(10, 100, 10, 0.3);
+}
+#ong3:hover {
+    background-color: rgba(10, 100, 10, 0.3);
+}
+#titong:hover {
+    background-color: rgba(10, 100, 10, 0.3);
 }
 #titong {
     width: 100%;
     height: 70px;
     border-bottom: 3px solid #18525a;
     background-color: rgba(10, 100, 10, 0.15);
+    transition-duration: 0.3s;
 }
 #titong h1 {
     color: #25b0c0;
@@ -461,7 +475,7 @@ html, body {height: 100%;}
 }
 #ong1 a {
     font-size: 60px;
-    text-align: left;
+    text-align: center;
     color: #6fc9d3;
     text-shadow: 3px 3px 3px #000;
     margin-left: 20px;
@@ -557,6 +571,7 @@ html, body {height: 100%;}
     border-bottom: 3px solid #18525a;
     background-color: rgba(10, 100, 10, 0.1);
     box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
+    transition-duration: 0.3s;
 }
 #ong3 {
     display: flex;
@@ -566,6 +581,7 @@ html, body {height: 100%;}
     border-bottom: 3px solid #18525a;
     background-color: rgba(10, 100, 10, 0.1);
     box-shadow: inset 0px 0px 3px 3px rgba(132, 221, 142, 0.4);
+    transition-duration: 0.3s;
 }
 @keyframes apar {
     from{opacity: 0; left: 40px;}
@@ -640,7 +656,6 @@ html, body {height: 100%;}
     #mpd {
         height: 200px;
         top: 140px;
-        pointer-events: none;
     }
     #cons {
         font-size: 30px;
@@ -690,6 +705,18 @@ html, body {height: 100%;}
     .vv {
         box-shadow: none;
     }
+    .btns {
+        display: grid;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+    #btn_ong {
+        width: 140px;
+        height: 45px;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 520px) {
     .container {
@@ -710,6 +737,9 @@ html, body {height: 100%;}
     @keyframes apar {
         from{opacity: 0; left: 0px;}
         to{opacity: 1; left: 20px;}
+    }
+    #ong1 a, #ong2 a, #ong3 a {
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 420px) {
